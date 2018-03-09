@@ -1,0 +1,529 @@
+*{
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+}
+
+body{
+	font-family: 'verdana';
+}
+
+/*NAVIGATIE*/
+nav{
+	position: fixed;
+	width: 100%;
+	box-shadow: 5px 5px 5px #1b1c1e;
+	z-index: 4;
+}
+
+ul {
+    list-style-type: none;
+    margin: center;
+    overflow: hidden;
+    background-color: #1b1c1e;
+    /*position: fixed;*/
+}
+
+li {
+    float: left;
+    margin-left: 7%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-family: 'verdana';
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #b6380f;
+    /*box-shadow: 5px 5px 5px #b6380f;*/
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/*HOOGTE PAGINA's*/
+div{
+    height: 100vh;
+}
+
+#strook1{
+	background-image: url(../images/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#strook2, #strook4, #strook6{
+	background-image: url(../images/streep.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+#strook3, #strook5{
+	background-color: #b6380f; 
+}
+
+/*---------------------------------------------------OPMAAK STROOK1*/
+h1{
+	padding-top: 10%;
+	font-family: 'poplarstd';
+	color: #b6380f;
+	font-size: 15vh;
+	padding: 0;
+	margin: 0;
+}
+
+.johnny{
+	padding: 10% 0% 0% 7%;
+	width: 30%;
+}
+
+.headtxt{
+	width: 11%;
+	color: #28150f;
+	font-weight: bold;
+	padding: 0 0% 0 8%;
+	float: left;
+}
+
+.headtitle{
+	width: 20%;
+	float: right;
+	padding: 0% 60% 0 0;
+	font-size: 16vh;
+}
+
+/*---------------------------------------------------OPMAAK STROOK2*/
+#strook2 figure img{
+	width: 19%;
+	padding-top: 3%;
+	padding-right: 30%;
+	float: right;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.strook2{
+	width: 30%;
+	color: white;
+	float: left;
+	padding-right: 0%;
+	font-size: 2.5vh;
+	margin-top: 10%;
+	margin-left: 17%;
+	text-align: justify;
+	line-height: 4vh;
+}
+
+#strook2 figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/*---------------------------------------------------OPMAAK STROOK3*/
+.strook3 {
+    list-style-type: none;
+    margin: 10% 0 0 15%;
+    overflow: none;
+   	width: 20%;
+   	float: left;
+   	color: white;
+	font-size: 3vh;
+	line-height: 3.7vh;
+	padding: 1%;
+	padding-left: 2%;
+}
+
+.strook3 li {
+    float: none;
+    margin-left: 0;
+}
+
+#strook3 figure img{
+	width: 20%;
+	margin-top: 10%;
+	margin-left: 2%;
+}
+
+#strook3 figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#strook3 figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/*---------------------------------------------------OPMAAK STROOK4*/
+
+.strook4 {
+    list-style-type: none;
+    overflow: none;
+   	width: 35%;
+   	float: left;
+   	color: white;
+	font-size: 3vh;
+	line-height: 3.7vh;
+	padding: 1% 2% 1% 2%;
+}
+
+.strook4 li {
+    float: none;
+    margin-left: 0;
+}
+
+#strook4 div{
+	padding: 10% 0% 0 20%;
+}
+
+#strook4 figure img {
+	width: 20%;
+	float: left;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#strook4 figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/*---------------------------------------------------OPMAAK STROOK5*/
+
+#strook5 ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: none;
+    background-color: rgba(0,0,0,0.0);
+    /*position: fixed;*/
+}
+
+#strook5 li {
+    float: none;
+    margin-left: 0;
+}
+
+#strook5 li a {
+    display: none;
+    color: white;
+    text-align: left;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'verdana';
+}
+
+#strook5{
+	position: relative;
+	text-align: center;
+}
+#strook5 figure{
+	width: 90%;
+}
+
+.fotos{
+	margin: 0;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#strook5 figure img{
+	width: 20%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#strook5 figure img:hover{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/*---------------------------------------------------OPMAAK STROOK6*/
+
+#strook6{
+	position: relative;
+}
+
+iframe{
+	margin: 0;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*FONTS*/
+@font-face{
+	font-family: 'poplarstd';
+	src: url(../fonts/poplarstd.otf);
+}
+
+@font-face{
+	font-family: 'verdana';
+	src: url(../fonts/verdana.ttf);
+}
+
+/*------------------------------------------------Tablet*/
+
+@media only screen and (max-width: 1024px){
+	.fill ul li a {
+    	padding: 14px 0px;
+	}
+
+	#strook1{
+		background-size: fixed;
+	}
+
+	#strook2{
+		position: relative;
+	}
+
+	.strook2{
+	width: 80%;
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	}
+
+	#strook2 figure img{
+	width: 40%;
+	padding-top: 15%;
+	padding-right: 2%;
+	float: right;
+	}
+
+	#fotosbio{
+		display: none;
+	}
+
+	#strook3 figure img{
+		display: none;
+	}
+
+	#strook3{
+		position: relative;
+	}
+
+	.strook3{
+		width: 80%;
+		margin: 0;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+	}
+
+	.strook4{
+		width: 80%;
+		margin: 0 0% 0 -5%;
+	}
+
+	#strook4 figure img{
+		display: none;
+	}
+
+	.fotos{
+		margin: 0 0 0 5%;
+	}
+
+	iframe{
+		width: 100%;
+	}
+}
+
+/*--------------------------------------------------------Mobiel*/
+@media only screen and (max-width: 480px){
+	/*---------------------------------------------------NAVIGATIE*/
+	nav{
+		position: absolute;
+		width: 100%;
+		box-shadow: 5px 5px 5px #1b1c1e;
+	}
+
+	ul {
+    	list-style-type: none;
+    	margin: center;
+    	overflow: none;
+    	background-color: #1b1c1e;
+    	/*position: fixed;*/
+	}
+
+	li {
+    	margin-left: 7%;
+    	float: none;
+	}
+
+	li a {
+    	display: inherit;
+    	color: white;
+   		text-align: center;
+    	padding: 0 0 0 0;
+    	text-decoration: none;
+    	font-family: 'verdana';
+	}
+
+	#strook1{
+		background-size: 500%;
+		background-position: center;
+	}
+
+	/*---------------------------------------------------OPMAAK STROOK1*/
+h1{
+	padding-top: 10%;
+	font-family: 'poplarstd';
+	color: #b6380f;
+	font-size: 12vh;
+	padding: 0;
+	margin: 0;
+}
+
+.johnny{
+	padding: 95% 0% 0% 7%;
+	width: 30%;
+}
+
+.headtxt{
+	width: 45%;
+	color: white;
+	font-weight: normal;
+	padding: 0 0% 0 40%;
+	float: none;
+	text-align: center;
+}
+
+.headtitle{
+	width: 20%;
+	float: none;
+	padding: 5% 0 0 15%;
+	font-size: 14vh;
+	text-align: center;
+}
+
+/*---------------------------------------------------OPMAAK STROOK2*/
+#strook2 figure img{
+	width: 40%;
+	padding-top: 0%;
+	padding-right: 0%;
+	float: none;
+	display: inline;
+	padding-left: 25%;
+	
+}
+
+.strook2{
+	width: 93%;
+	color: white;
+	float: left;
+	padding-right: 1%;
+	font-size: 2vh;
+	margin-top: 10%;
+	margin-left: 1.5%;
+	text-align: justify;
+	line-height: 3vh;
+}
+
+/*---------------------------------------------------OPMAAK STROOK3*/
+.strook3 {
+    list-style-type: none;
+    margin: 5% 0% 0 0%;
+    overflow: none;
+   	width: 90%;
+   	float: left;
+   	color: white;
+	font-size: 2.5vh;
+	line-height: 3vh;
+	padding: 5%;
+	padding-left: 5%;
+	text-align: center;
+}
+
+.strook3 li {
+    float: none;
+    margin-left: 0;
+}
+
+#strook3 figure img{
+	width: 45%;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+/*---------------------------------------------------OPMAAK STROOK4*/
+
+.strook4 {
+    list-style-type: none;
+    overflow: none;
+   	width: 100%;
+   	float: right;
+   	color: white;
+	font-size: 2.5vh;
+	line-height: 3vh;
+	padding: 1%;
+	text-align: center;
+}
+
+#strook4 div{
+	padding: 0 0 0 0;
+}
+
+.strook4 li {
+    float: none;
+    margin-left: 0;
+}
+
+#strook5{
+	height: 1800px;
+}
+
+#strook5 figure img{
+	width: 50%;
+}
+
+.fotos{
+	text-align: center;
+}
+
+iframe{
+}
+}
